@@ -1,13 +1,5 @@
-﻿vets:
-  cache:
-    ttl: 60
-    heap-size: 100
-
----
-spring:
-  config:
-    activate:
-      on-profile: default
+﻿spring:
+  profiles: default
 eureka:
   instance:
     # enable to register multiple app instances with a random server port
@@ -21,7 +13,7 @@ spring:
   zipkin:
     baseUrl: http://tracing-server:9411
 server:
-  port: 8083
+  port: 8082
 eureka:
   client:
     serviceUrl:

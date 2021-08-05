@@ -1,4 +1,4 @@
-spring:
+﻿spring:
   profiles: default
 eureka:
   instance:
@@ -17,4 +17,4 @@ server:
 eureka:
   client:
     serviceUrl:
-      defaultZone: http://localhost:8001/eureka/
+      defaultZone: http://discovery-server:8761/eureka/
